@@ -7,7 +7,7 @@ numbers.forEach(number=>console.log(number  *2))
 import chalk from 'chalk';
 import { log } from 'console';
 
-console.log(chalk.red('Hello world!') + chalk.blue(("hola")));
+console.log(chalk.red('hola mundo!') + chalk.blue(("hola")));
 
 
 
@@ -15,7 +15,7 @@ import  Express  from 'express';
 const app = Express()
 
 app.get("/", (req, res)=>{
-    res.send("/")
+    res.send("hola pinche putito")
 })
 
 const PORT = process.env.PORT || 3000
