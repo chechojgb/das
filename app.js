@@ -18,8 +18,10 @@ app.get("/", (req, res)=>{
     res.send("/")
 })
 
-app.listen(3000,()=>
-console.log("se escucha puerto 3000"),
+const PORT = process.env.PORT || 3000
+
+console.log(PORT);
+
+app.listen(PORT,()=>
+console.log("se escucha puerto ", PORT)
 );
-
-
